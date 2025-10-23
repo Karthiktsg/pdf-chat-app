@@ -2,7 +2,8 @@ import streamlit as st
 from pypdf import PdfReader
 from langchain_text_splitters import CharacterTextSplitter
 # CHANGED: Import Google's embeddings and chat models
-from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.vectorstores import FAISS
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
